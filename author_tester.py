@@ -1,9 +1,8 @@
 from author_generator import *
 
-authors_data = [["Ahmet Emin","Mumtaz"], ["Elif","Taylan"], ["Dincer", "Faylan"], ["Dincero", "Faylana"], ["Duygu", "Gaylan"], ["Derin", "Geylan"], ["Duru", "Faylan"], ["Elif", "Faylana"]]
+authors_data = [["Ahmet Emin","Mumtaz"], ["Elif","Taylan"], ["Dincer", "Faylan"], ["Dincero", "Faylana"], ["Duygu", "Gaylan"], ["Duru", "Faylan"], ["Elif", "Faylana"]]
 
 a = AuthorGenerator()
-t = TitleGenerator()
 
 formatted_authors=[]
 for author_data in authors_data:
