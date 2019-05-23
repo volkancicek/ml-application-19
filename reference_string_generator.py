@@ -12,22 +12,24 @@ def main():
     doi_styles = dict()
     reference_style_count = len(conf['reference_styles'])
     ref_str_list = list()
-    for doi in dois:
+    for doi_id in dois:
         ref_string_count = int(get_random_index(conf['max_reference_per_paper'])) + 1
         for i in range(ref_string_count):
             ref_style = conf['reference_styles'][get_random_index(reference_style_count)]
-            if doi in doi_styles:
-                if ref_style in doi_styles[doi]:
+            if doi_id in doi_styles:
+                if ref_style in doi_styles[doi_id]:
                     continue
             else:
-                doi_styles[doi] = list()
+                doi_styles[doi_id] = list()
 
-            ref_str = create_reference_string(dois[doi], ref_style)
-            doi_styles[doi].append(ref_style)
-            row = [dois[doi], doi, ref_style, ref_str]
+            ref_str = create_reference_string(dois[doi_id], ref_style)
+            doi_styles[doi_id].append(ref_style)
+            ''' Create typo for random records!!! '''
+            if get_random_index(100) < 10:
+                ref_str = create_typo(ref_str)
+            ''' ['doi', 'doi id', 'style', 'reference string'] '''
+            row = [dois[doi_id], doi_id, ref_style, ref_str]
             ref_str_list.append(row)
-
-    ref_str_list = generate_typos(ref_str_list)
 
     try:
         write_reference_data_json(ref_str_list)
@@ -70,27 +72,41 @@ def create_reference_string(doi, ref_style):
     return ref_string
 
 
-def generate_typos(reference_list):
-    references_with_typo = reference_list[0: int(len(reference_list) * .10)]
+def create_typo(s):
+    words = s.split()
+    for word in words:
+        if len(word) > 5 and word.isalpha():
+            w = change_last_character(word)
+            words[words.index(word)] = w
+            s = ' '.join(words)
+            return s
+    return s
 
-    return new_list
+
+def change_last_character(s):
+    s += s[-1:]
+    return s
 
 
 def write_reference_data_csv(rows):
-    output = open(conf['output_file_csv'], 'w')
+    output = open(conf['output_file_csv'], 'a')
     writer = csv.writer(output)
     writer.writerow(['doi', 'id', 'style', 'reference string'])
     writer.writerows(rows)
 
 
 def write_reference_data_txt(refs):
-    with open(conf['output_file_txt'], 'w') as f:
+    with open(conf['output_file_txt'], 'a') as f:
         for item in refs:
-            f.write("%s\n" % str(item))
+            try:
+                f.write("%s\n" % str(item))
+            except:
+                print("!!!ERROR writing to txt" + str(item))
+                continue
 
 
 def write_reference_data_json(data):
-    with open(conf['output_file_json'], 'w') as outfile:
+    with open(conf['output_file_json'], 'a') as outfile:
         json.dump(data, outfile)
 
 
