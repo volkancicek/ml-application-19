@@ -3,6 +3,8 @@ import habanero as ha
 import csv
 import json
 from config import conf
+import cermine
+
 
 
 def main():
@@ -12,6 +14,7 @@ def main():
     doi_styles = dict()
     reference_style_count = len(conf['reference_styles'])
     ref_str_list = list()
+    cermine_txt = ''
     for doi_id in dois:
         ref_string_count = int(get_random_index(conf['max_reference_per_paper'])) + 1
         for i in range(ref_string_count):
@@ -28,8 +31,14 @@ def main():
             if get_random_index(100) < 10:
                 ref_str = create_typo(ref_str)
             ''' ['doi', 'doi id', 'style', 'reference string'] '''
+            cermine_txt += cermine.call_cermine(ref_str)
             row = [dois[doi_id], doi_id, ref_style, ref_str]
             ref_str_list.append(row)
+
+    try:
+        write_cermine_txt(cermine_txt)
+    except:
+        print("!!!ERROR writing cermine text")
 
     try:
         write_reference_data_json(ref_str_list)
@@ -89,14 +98,14 @@ def change_last_character(s):
 
 
 def write_reference_data_csv(rows):
-    output = open(conf['output_file_csv'], 'a')
+    output = open(conf['output_file_csv'], 'w')
     writer = csv.writer(output)
     writer.writerow(['doi', 'id', 'style', 'reference string'])
     writer.writerows(rows)
 
 
 def write_reference_data_txt(refs):
-    with open(conf['output_file_txt'], 'a') as f:
+    with open(conf['output_file_txt'], 'w') as f:
         for item in refs:
             try:
                 f.write("%s\n" % str(item))
@@ -106,8 +115,13 @@ def write_reference_data_txt(refs):
 
 
 def write_reference_data_json(data):
-    with open(conf['output_file_json'], 'a') as outfile:
+    with open(conf['output_file_json'], 'w') as outfile:
         json.dump(data, outfile)
+
+
+def write_cermine_txt(txt):
+    with open(conf['cermine_result'], 'w') as f:
+        f.write(txt)
 
 
 if __name__ == '__main__':
