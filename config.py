@@ -4,5 +4,6 @@ conf = {'input_file': "sample.json",
         'output_file_csv': 'reference_strings.csv',
         'reference_paper_count': 5,
         'reference_styles': ('apa', 'chicago-annotated-bibliography', 'ieee'),
-        'max_reference_per_paper': 3
+        'max_reference_per_paper': 3,
+        'cermine_result': 'cermine_result.txt'
         }
