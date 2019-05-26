@@ -3,8 +3,7 @@ import habanero as ha
 import csv
 import json
 from config import conf
-import cermine
-
+import cermine as cer
 
 
 def main():
@@ -14,7 +13,7 @@ def main():
     doi_styles = dict()
     reference_style_count = len(conf['reference_styles'])
     ref_str_list = list()
-    cermine_txt = ''
+    cermine_results = ''
     for doi_id in dois:
         ref_string_count = int(get_random_index(conf['max_reference_per_paper'])) + 1
         for i in range(ref_string_count):
@@ -31,15 +30,18 @@ def main():
             if get_random_index(100) < 10:
                 ref_str = create_typo(ref_str)
             ''' ['doi', 'doi id', 'style', 'reference string'] '''
-            cermine_txt += cermine.call_cermine(ref_str)
+            cermine_results += cer.call_cermine(ref_str)
             row = [dois[doi_id], doi_id, ref_style, ref_str]
             ref_str_list.append(row)
 
+    write_results(ref_str_list, cermine_results)
+
+
+def write_results(ref_str_list, cermine_result):
     try:
-        write_cermine_txt(cermine_txt)
+        write_cermine_txt(cermine_result)
     except:
         print("!!!ERROR writing cermine text")
-
     try:
         write_reference_data_json(ref_str_list)
     except:
@@ -52,8 +54,6 @@ def main():
         write_reference_data_csv(ref_str_list)
     except:
         print("!!!ERROR writing to CSV")
-
-    print(ref_str_list)
 
 
 def get_random_dois(data, document_count):
@@ -78,6 +78,7 @@ def get_random_index(max_num):
 
 def create_reference_string(doi, ref_style):
     ref_string = ha.cn.content_negotiation(ids=doi, format="text", style=ref_style)
+
     return ref_string
 
 
@@ -89,6 +90,7 @@ def create_typo(s):
             words[words.index(word)] = w
             s = ' '.join(words)
             return s
+
     return s
 
 
