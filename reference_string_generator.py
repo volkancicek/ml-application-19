@@ -79,13 +79,13 @@ def get_random_index(max_num):
 
 def create_reference_string(doi, ref_style):
     ref_string = ha.cn.content_negotiation(ids=doi, format="text", style=ref_style)
-    for rem in ['doi\:10\..*',
-                'Available at: http://dx.doi.org/.*',
-                'Available from: http://dx.doi.org/.*',
-                'Crossref. Web.',
-                '[^ ]*doi\.org/10\.[^ ]*',
-                '[^ ]*' + doi[:5] + '[^ ]*']:
-        ref_string = re.sub(rem, '', ref_string)
+    # for rem in ['doi\:10\..*',
+    #             'Available at: http://dx.doi.org/.*',
+    #             'Available from: http://dx.doi.org/.*',
+    #             'Crossref. Web.',
+    #             '[^ ]*doi\.org/10\.[^ ]*',
+    #             '[^ ]*' + doi[:5] + '[^ ]*']:
+    #     ref_string = re.sub(rem, '', ref_string)
     ref_string = re.sub(' +', ' ', ref_string)
     ref_string = re.sub('\n', ' ', ref_string)
     return ref_string.strip()
