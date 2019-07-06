@@ -3,22 +3,22 @@ import habanero as ha
 import csv
 import json
 import re
-from config import conf
-import cermine as cer
+from config import *
+from miscellaneous import cermine as cer
 
 
 def main():
-    with open(conf['input_file'], 'r') as f:
+    with open(config[input_file], 'r') as f:
         data = json.load(f)
-    dois = get_random_dois(data, conf['reference_paper_count'])
+    dois = get_random_dois(data, config[reference_paper_count])
     doi_styles = dict()
-    reference_style_count = len(conf['reference_styles'])
+    reference_style_count = len(config[reference_styles])
     ref_str_list = list()
     cermine_results = ''
     for doi_id in dois:
-        ref_string_count = int(get_random_index(conf['max_reference_per_paper'])) + 1
+        ref_string_count = int(get_random_index(config[max_reference_per_paper])) + 1
         for i in range(ref_string_count):
-            ref_style = conf['reference_styles'][get_random_index(reference_style_count)]
+            ref_style = config[reference_styles][get_random_index(reference_style_count)]
             if doi_id in doi_styles:
                 if ref_style in doi_styles[doi_id]:
                     continue
@@ -27,11 +27,13 @@ def main():
 
             ref_str = create_reference_string(dois[doi_id], ref_style)
             doi_styles[doi_id].append(ref_style)
-            ''' Create typo for random records!!! '''
+            ''' Create typo for random records ~%10!!! '''
             if get_random_index(100) < 10:
                 ref_str = create_typo(ref_str)
             ''' ['doi', 'doi id', 'style', 'reference string'] '''
-            cermine_results += cer.call_cermine(ref_str)
+            if int(config[cermine_active]) > 0:
+                cermine_results += cer.call_cermine(ref_str)
+
             row = [dois[doi_id], doi_id, ref_style, ref_str]
             ref_str_list.append(row)
 
@@ -40,7 +42,8 @@ def main():
 
 def write_results(ref_str_list, cermine_result):
     try:
-        write_cermine_txt(cermine_result)
+        if int(config[cermine_active]) > 0:
+            write_cermine_txt(cermine_result)
     except:
         print("!!!ERROR writing cermine text")
     try:
@@ -61,7 +64,7 @@ def get_random_dois(data, document_count):
     paper_count = data["size"]
     sample_dois = data["sample_dois"]
     doi_list = {}
-    _id = 0
+    _id = 1
     for x in range(document_count):
         tmp_ind = get_random_index(paper_count)
         doi = (sample_dois[tmp_ind])
@@ -109,14 +112,14 @@ def change_last_character(s):
 
 
 def write_reference_data_csv(rows):
-    output = open(conf['output_file_csv'], 'w')
+    output = open(config[output_file_csv], 'w')
     writer = csv.writer(output)
     writer.writerow(['doi', 'id', 'style', 'reference string'])
     writer.writerows(rows)
 
 
 def write_reference_data_txt(refs):
-    with open(conf['output_file_txt'], 'w') as f:
+    with open(config[output_file_txt], 'w') as f:
         for item in refs:
             try:
                 f.write("%s\n" % str(item))
@@ -126,12 +129,12 @@ def write_reference_data_txt(refs):
 
 
 def write_reference_data_json(data):
-    with open(conf['output_file_json'], 'w') as outfile:
+    with open(config[output_file_json], 'w') as outfile:
         json.dump(data, outfile)
 
 
 def write_cermine_txt(txt):
-    with open(conf['cermine_result'], 'w') as f:
+    with open(config[cermine_result], 'w') as f:
         f.write(txt)
 
 

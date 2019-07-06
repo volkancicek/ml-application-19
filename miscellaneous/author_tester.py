@@ -1,4 +1,4 @@
-from author_generator import *
+from miscellaneous.author_generator import *
 
 authors_data = [["Ahmet Emin","Mumtaz"], ["Elif","Taylan"], ["Dincer", "Faylan"], ["Dincero", "Faylana"], ["Duygu", "Gaylan"], ["Duru", "Faylan"], ["Elif", "Faylana"]]
 
