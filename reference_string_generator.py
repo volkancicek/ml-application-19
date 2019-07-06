@@ -4,7 +4,7 @@ import csv
 import json
 import re
 from config import conf
-import cermine as cer
+from miscellaneous import cermine as cer
 
 
 def main():
