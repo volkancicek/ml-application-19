@@ -1,0 +1,313 @@
+
+ }
+@article{ref0, 
+ author  =  {Low A} , 
+ year  =  {1983} , 
+ title  =  {Review: The Life of} , 
+ editor  =  {John Milton,” Christianity} , 
+ volume  =  {32(4} , 
+ pages  =  {53 -- 54} 
+ }
+@article{ref0, 
+ author  =  {Low Anthony} , 
+ title  =  {The Life of John Milton.” Christianity} , 
+ booktitle  =  {& Literature} , 
+ volume  =  {32} , 
+ issue  =  {4} , 
+ year  =  {September 1983)} , 
+ pages  =  {53 -- 54} , 
+ identifier  =  {doi:10.1177/014833318303200420} 
+ }
+@article{ref0, 
+ author  =  {Low Anthony} , 
+ title  =  {The Life of John Milton.” Christianity} , 
+ booktitle  =  {& Literature} , 
+ volume  =  {32.4} , 
+ year  =  {1983} , 
+ pages  =  {53 -- 54} , 
+ note  =  {Crossref. Web} 
+ }
+@article{ref0, 
+ author  =  {Low A} , 
+ year  =  {1983} , 
+ title  =  {Review: The Life of John Milton} , 
+ booktitle  =  {Christianity & Literature} , 
+ volume  =  {32(4} , 
+ pages  =  {53 -- 54} , 
+ identifier  =  {doi:10.1177/014833318303200420} 
+ }
+@article{ref0, 
+ author  =  {Low} , 
+ title  =  {Review: The Life of John Milton,” Christianity} , 
+ booktitle  =  {& Literature} , 
+ volume  =  {32} , 
+ issue  =  {4} , 
+ pages  =  {53 -- 54} , 
+ year  =  {1983} 
+ }
+@article{ref0, 
+ author  =  {Low Anthony} , 
+ title  =  {The Life of John Milton” (1983) 32:4 Christianity} , 
+ volume  =  {53} , 
+ url  =  {<http://dx.doi.org/10.1177/014833318303200420>} 
+ }
+@article{ref0, 
+ author  =  {Low A and Review} , 
+ title  =  {The Life of John Milton} , 
+ publisher  =  {Christianityy & Literature} , 
+ identifier  =  {1983;32(4):53–54. doi:10.1177/014833318303200420} 
+ }
+@article{ref0, 
+ author  =  {Low A and Review} , 
+ title  =  {The Life of John Milton. Christianity & Literature [Internet} , 
+ year  =  {1983} , 
+ booktitle  =  {September;32(4):53–54} , 
+ url  =  {http://dx.doi.org/10.1177/014833318303200420} 
+ }
+@article{ref1, 
+ author  =  {Beltman WM} , 
+ title  =  {Radiated noise from structural vibrations of a PC} , 
+ booktitle  =  {The Journal of the Acoustical Society of America} , 
+ year  =  {2005 September;118(3):1867–1867} , 
+ url  =  {http://dx.doi.org/10.1121/1.4779092} 
+ }
+@article{ref1, 
+ author  =  {M} , 
+ title  =  {Beltman, “Radiated noise from structural vibrations of a PC,” The} , 
+ booktitle  =  {Journal of the Acoustical Society of America} , 
+ volume  =  {118} , 
+ issue  =  {3} , 
+ pages  =  {1867 -- 1867} , 
+ year  =  {2005} 
+ }
+@article{ref1, 
+ author  =  {Beltmann WM} , 
+ title  =  {Radiated noise from structural vibrations of a PC} , 
+ booktitle  =  {The Journal of the Acoustical Society of America} , 
+ identifier  =  {2005;118(3):1867–1867. doi:10.1121/1.4779092} 
+ }
+@article{ref1, 
+ author  =  {Beltman Willem M} , 
+ title  =  {Radiated noise from structural vibrations of a PC 118:3 The} , 
+ year  =  {2005 1867} , 
+ booktitle  =  {Journal of the Acoustical Society of America} , 
+ pages  =  {h -- 10</fpage> - <lpage>1121</fpage> - <lpage>1</fpage> - <lpage>4779092} 
+ }
+@article{ref2, 
+ author  =  {Laursen Gert H. N. and Thorlund} , 
+ given-names  =  {Jesper} , 
+ year  =  {2014} , 
+ title  =  {The Business Analytics Model.” Business Analytics for Managers 1–15} , 
+ url  =  {(http://dx.doi.org/10.1002/9781118983812.ch1)} 
+ }
+@article{ref2, 
+ author  =  {G.H.N Thorlund and J} , 
+ year  =  {2014 2014} , 
+ title  =  {The Business Analytics Model. Business Analytics for Managers} , 
+ note  =  {Jun} , 
+ pages  =  {1 -- 15} 
+ }
+@article{ref2, 
+ author  =  {Laursen G. H. N. and Thorlund J} , 
+ year  =  {2014} , 
+ title  =  {The Business Analytics Model} , 
+ publisher  =  {Business Analytics for Managers} , 
+ pages  =  {1 -- 15} , 
+ identifier  =  {doi:10.1002/9781118983812.ch1} 
+ }
+@article{ref2, 
+ author  =  {Laursen G and Thorlund J} , 
+ year  =  {2014} , 
+ title  =  {The Business Analytics Model,” Business Analytics for Managers} , 
+ pages  =  {1 -- 15} 
+ }
+@article{ref2, 
+ author  =  {Laursen G. H and N.; Thorlund J} , 
+ title  =  {The Business Analytics Model} , 
+ booktitle  =  {Business Analytics for Managers} , 
+ year  =  {2014} , 
+ pages  =  {1 -- 15} 
+ }
+@article{ref3, 
+ author  =  {Nanji Amin A} , 
+ title  =  {Absence of Symptoms and Acidosis in Potentially Lethal Methanol Poisoning} , 
+ booktitle  =  {Annals of Emergency Medicine} , 
+ volume  =  {13} , 
+ issue  =  {6} , 
+ note  =  {June 1984)} , 
+ pages  =  {487 --} , 
+ url  =  {http://dx.doi.org/10.1016/s0196-0644(84)80040-2} 
+ }
+@article{ref3, 
+ author  =  {Nanji AA} , 
+ title  =  {Absence of symptoms and acidosis in potentially lethal methanol poisoning} , 
+ booktitle  =  {Annals of Emergency Medicine [Internet]} , 
+ year  =  {1984} , 
+ volume  =  {June;13(6):487} , 
+ url  =  {http://dx.doi.org/10.1016/s0196-0644(84)80040-2} 
+ }
+@article{ref3, 
+ author  =  {Nanji A. A.} , 
+ year  =  {1984} , 
+ title  =  {Absence of symptoms and acidosis in potentially lethal methanol poisoning} , 
+ booktitle  =  {Annals of Emergency Medicine} , 
+ volume  =  {13(6} , 
+ pages  =  {487 --} 
+ }
+@article{ref3, 
+ author  =  {Nanji Amin A} , 
+ title  =  {Absence of symptoms and acidosis in potentially lethal methanol poisoning} , 
+ year  =  {1984} , 
+ volume  =  {13:6 487} , 
+ booktitle  =  {Annals of Emergency Medicine} , 
+ pages  =  {h -- 10</fpage> - <lpage>1016</fpage> - <lpage>0196</fpage> - <lpage>0644</fpage> - <lpage>84</fpage> - <lpage>80040</fpage> - <lpage>2} 
+ }
+@article{ref3, 
+ author  =  {Nanji A. A} , 
+ year  =  {1984} , 
+ title  =  {Absence of symptoms and acidosis in potentially lethal methanol poisoning} , 
+ booktitle  =  {Annals of Emergency Medicine} , 
+ volume  =  {13(6} , 
+ pages  =  {d -- 10</fpage> - <lpage>1016</fpage> - <lpage>0196</fpage> - <lpage>0644</fpage> - <lpage>84</fpage> - <lpage>80040</fpage> - <lpage>2} 
+ }
+@article{ref4, 
+ author  =  {S. Kashey D. D and Luu J. C and Cowgill P. L and Baker K. E and Redding} , 
+ title  =  {Light-driven quinonee reduction in heliobacterial membranes} , 
+ booktitle  =  {Photosynthesis Research} , 
+ volume  =  {138} , 
+ issue  =  {1} , 
+ pages  =  {1 -- 9} , 
+ year  =  {2018} 
+ }
+@article{ref5, 
+ year  =  {1]2017} , 
+ title  =  {Derivation of the pseudocontact shift equations in different forms,” Solution NMR of Paramagnetic Molecules} , 
+ pages  =  {467 -- 469} 
+ }
+@article{ref5, 
+ title  =  {“Derivation of the Pseudocontact Shift Equations in Different Forms.” Solution NMR of Paramagnetic Molecules} , 
+ year  =  {2017} , 
+ pages  =  {467 -- 469} , 
+ note  =  {Crossref. Web} 
+ }
+@article{ref5, 
+ title  =  {Derivation of the pseudocontact shift equations in different forms Solution NMR of Paramagnetic Molecules} , 
+ year  =  {2017} , 
+ pages  =  {467 -- 469} , 
+ url  =  {doi:10.1016/b978-0-444-63436-8.00016-8} 
+ }
+@article{ref5, 
+ title  =  {“Derivation of the Pseudocontact Shift Equations in Different Forms.” Solution NMR of Paramagnetic Molecules} , 
+ year  =  {2017} , 
+ pages  =  {467 -- 469} , 
+ url  =  {http://dx.doi.org/10.1016/b978-0-444-63436-8.00016-8} 
+ }
+@article{ref5, 
+ title  =  {Derivation of the Pseudocontact Shift Equations in Different Forms} , 
+ booktitle  =  {Solution NMR of Paramagnetic Molecules} , 
+ year  =  {2017} , 
+ pages  =  {467 -- 469} 
+ }
+@article{ref5, 
+ author  =  {Anon} , 
+ year  =  {2017} , 
+ title  =  {Derivation of the Pseudocontact Shift Equations in Different Forms.” Solution NMR of Paramagnetic Molecules 467–69} 
+ }
+@article{ref5, 
+ title  =  {‘Derivation of the Pseudocontact Shift Equations in Different Forms’, Solution NMR of Paramagnetic Molecules} , 
+ volume  =  {2017} , 
+ pages  =  {467 -- 469} 
+ }
+@article{ref6, 
+ year  =  {1]2002 2002} , 
+ title  =  {Fault Diagnostics Algorithm of Rotating Machinery Using ART-Kohonen Neural Network} , 
+ booktitle  =  {Transactions of the Korean Society for Noise and Vibration Engineering} , 
+ volume  =  {12, 10} , 
+ issue  =  {Oct} , 
+ pages  =  {799 -- 807} 
+ }
+@article{ref6, 
+ author  =  {Fault} , 
+ title  =  {Diagnostics Algorithm of Rotating Machinery Using ART-Kohonen Neural Network. Transactions of the Korean Society for Noise and Vibration Engineering} , 
+ note  =  {2002;12(10):799–807. doi:10.5050/ksnvn.2002.12.10.799} 
+ }
+@article{ref6, 
+ year  =  {1]2002} , 
+ title  =  {Fault Diagnostics Algorithm of Rotating Machinery Using ART-Kohonen Neural Network} , 
+ booktitle  =  {Transactions of the Korean Society for Noise and Vibration Engineering} , 
+ volume  =  {12(10} , 
+ pages  =  {799 -- 807} 
+ }
+@article{ref7, 
+ author  =  {Goossens B and Defour D} , 
+ title  =  {The Instruction Register File Micro-Architecture} , 
+ booktitle  =  {Future Generation Computer Systems} , 
+ year  =  {2005} , 
+ volume  =  {21} , 
+ pages  =  {767 -- 773} 
+ }
+@article{ref7, 
+ author  =  {Goossens Bernard and Defour} , 
+ given-names  =  {David} , 
+ title  =  {Instruction Register File Micro-Architecture} , 
+ booktitle  =  {Future Generation Computer Systems} , 
+ volume  =  {21.5} , 
+ year  =  {2005} , 
+ pages  =  {767 -- 773} , 
+ note  =  {Crossref. Web} 
+ }
+@article{ref7, 
+ author  =  {Goossens Bernard and Defour} , 
+ given-names  =  {David} , 
+ title  =  {Instruction Register File Micro-Architecture} , 
+ booktitle  =  {Future Generation Computer Systems} , 
+ volume  =  {21} , 
+ year  =  {2005 doi:10.1016/j.future.2004.05.017} , 
+ pages  =  {767 -- 773} 
+ }
+@article{ref7, 
+ author  =  {Goossens Bernard and Defour} , 
+ given-names  =  {David} , 
+ title  =  {Instruction Register File Micro-Architecture} , 
+ booktitle  =  {Future Generation Computer Systems} , 
+ volume  =  {21} , 
+ issue  =  {5} , 
+ note  =  {May} , 
+ year  =  {2005 doi:10.1016/j.future.2004.05.017} , 
+ pages  =  {767 -- 773} 
+ }
+@article{ref7, 
+ author  =  {Goossens B and Defour D} , 
+ year  =  {2005} , 
+ title  =  {The instruction register file micro-architecture} , 
+ booktitle  =  {Future Generation Computer Systems} , 
+ volume  =  {21(5} , 
+ pages  =  {767 -- 773} 
+ }
+@article{ref7, 
+ author  =  {Goossens Bernard and Defour} , 
+ given-names  =  {David} , 
+ year  =  {2005 http://dx.doi.org/10.1016/j.future.2004.05.017} , 
+ title  =  {The Instruction Register File Micro-Architecture} , 
+ booktitle  =  {Future Generation Computer Systems 21(5):767–73} 
+ }
+@article{ref7, 
+ author  =  {Goossens B and Defour D} , 
+ year  =  {2005 doi:10.1016/j.future.2004.05.017} , 
+ title  =  {The instruction register file micro-architecture} , 
+ booktitle  =  {Future Generation Computer Systems} , 
+ volume  =  {21(5} , 
+ pages  =  {767 -- 773} 
+ }
+@article{ref7, 
+ author  =  {Goossens Bernard and Defour} , 
+ given-names  =  {David} , 
+ title  =  {Instruction Register File Micro-Architecture} , 
+ booktitle  =  {Future Generation Computer Systems} , 
+ volume  =  {21} , 
+ issue  =  {5} , 
+ note  =  {May} , 
+ year  =  {2005} , 
+ pages  =  {767 -- 773} , 
+ url  =  {http://dx.doi.org/10.1016/j.future.2004.05.017} 
+ }
