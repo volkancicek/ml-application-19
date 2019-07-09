@@ -44,20 +44,20 @@ def write_results(ref_str_list, cermine_result):
     try:
         if int(config[cermine_active]) > 0:
             write_cermine_txt(cermine_result)
-    except:
-        print("!!!ERROR writing cermine text")
+    except Exception as e:
+        print("!!!ERROR writing cermine text"+str(e))
     try:
         write_reference_data_json(ref_str_list)
-    except:
-        print("!!!ERROR writing to JSON")
+    except Exception as e:
+        print("!!!ERROR writing to JSON"+str(e))
     try:
         write_reference_data_txt(ref_str_list)
-    except:
-        print("!!!ERROR writing to txt")
+    except Exception as e:
+        print("!!!ERROR writing to txt"+str(e))
     try:
         write_reference_data_csv(ref_str_list)
-    except:
-        print("!!!ERROR writing to CSV")
+    except Exception as e:
+        print("!!!ERROR writing to CSV"+str(e))
 
 
 def get_random_dois(data, document_count):
@@ -134,8 +134,8 @@ def write_reference_data_json(data):
 
 
 def write_cermine_txt(txt):
-    with open(config[cermine_result], 'w') as f:
-        f.write(txt)
+    with open(config[cermine_result], 'wb') as f:
+        f.write(txt.encode('utf8'))
 
 
 if __name__ == '__main__':
