@@ -13,7 +13,7 @@ config = {'input_file': "sample.json",
         'output_file_json': 'data/reference_strings.json',
         'output_file_txt': 'data/reference_strings.txt',
         'output_file_csv': 'data/reference_strings.csv',
-        'reference_paper_count': 3,
+        'reference_paper_count': 10,
         'reference_styles': (
         'apa', 'chicago-annotated-bibliography', 'ieee', 'council-of-science-editors', 'iso690-author-date-en',
         'modern-humanities-research-association', 'modern-language-association',
