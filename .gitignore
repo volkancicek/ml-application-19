@@ -4,3 +4,6 @@ reference_strings.csv
 reference_strings.txt
 .vscode/launch.json
 .idea/
+data/cermine_result.txt
+data/
+generated_data/

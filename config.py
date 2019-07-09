@@ -20,7 +20,7 @@ config = {'input_file': "sample.json",
         'american-society-of-mechanical-engineers', 'american-medical-association',
         'american-chemical-society-author-date', 'american-sociological-association', 'turabian-fullnote-bibliography',
         'acm-sig-proceedings', 'mcgill-en'),
-        'max_reference_per_paper': 10,
+        'max_reference_per_paper': 15,
         'cermine_active': 1,
         'cermine_result': 'data/cermine_result.txt',
         'exparser_result': 'data/exparser_result.json'
