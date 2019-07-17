@@ -5,6 +5,10 @@ reference_strings.txt
 .vscode/launch.json
 .idea/
 data/cermine_result.txt
-data/
 generated_data/
 __pycache__/
+data/moredata/cermine_result.txt
+data/embeddings/glove-300.matrix.npy
+data/embeddings/glove-300.gensim.vectors.npy
+data/embeddings/glove-300.gensim
+data/embeddings/glove-300.map
