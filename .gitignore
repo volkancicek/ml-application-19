@@ -7,3 +7,4 @@ reference_strings.txt
 data/cermine_result.txt
 data/
 generated_data/
+__pycache__/
