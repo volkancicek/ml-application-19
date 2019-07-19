@@ -14,6 +14,7 @@ def main():
     set1header = 'id1,author,title,journal,year'
     set2header = 'id2,author,title,journal,year'
     fileName='cermine_result.csv'
+    fileAddress =  'data/raw/crossref/cermine/'
 
     df = pd.read_csv("data/raw/crossref/"+fileName,encoding='utf-8',sep='\t')
     for index, row in df.iterrows():
@@ -31,11 +32,11 @@ def main():
         for elemB in listB:
             if elemA['ID'] == elemB['ID']:
                 matches.append(elemA['RefID']+','+elemB['RefID'])
-    save_to_file(matches,"data/matches.csv")
+    save_to_file(matches,fileAddress+"matches.csv")
 
 
-    create_and_save(set1,listA,set1header,"data/set1.csv")
-    create_and_save(set2,listB,set2header,"data/set2.csv")
+    create_and_save(set1,listA,set1header,fileAddress+"set1.csv")
+    create_and_save(set2,listB,set2header,fileAddress+"set2.csv")
 
 
 
