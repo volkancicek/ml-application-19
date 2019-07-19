@@ -1,5 +1,6 @@
 import bibtexparser
 import uuid
+import pandas as pd
 
 def main():
 
@@ -12,21 +13,18 @@ def main():
     set2 = []
     set1header = 'id1,author,title,journal,year'
     set2header = 'id2,author,title,journal,year'
-    with open('data/cermine_result.bib', encoding='utf-8') as bibtex_file:
-        bib_database = bibtexparser.load(bibtex_file)
+    fileName='cermine_result.csv'
 
-    for entry in bib_database.entries:
-        entry["RefID"] = str(uuid.uuid1())
-        if entry["ID"] in numOfEach:
-            if numOfEach[entry["ID"]] % 2 == 0:
-                numOfEach[entry["ID"]] += 1
-                listA.append(entry)
-            else:
-                numOfEach[entry["ID"]] += 1
-                listB.append(entry)
-        else:
-            numOfEach[entry["ID"]] = 1
+    df = pd.read_csv("data/raw/crossref/"+fileName,encoding='utf-8',sep='\t')
+    for index, row in df.iterrows():
+        bibtex_file = row["bibtex_string"]
+        bib_database = bibtexparser.loads(bibtex_file)
+        for entry in bib_database.entries:
+            entry["ID"] = row["id"]
+            entry["RefID"] = str(uuid.uuid1())
             listA.append(entry)
+
+    listB = listA.copy()
 
     matches.append('id1,id2')
     for elemA in listA:
