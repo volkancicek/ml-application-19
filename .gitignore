@@ -10,3 +10,5 @@ data/embeddings/glove-300.matrix.npy
 data/embeddings/glove-300.gensim.vectors.npy
 data/embeddings/glove-300.gensim
 data/embeddings/glove-300.map
+data/histories/
+data/models/
