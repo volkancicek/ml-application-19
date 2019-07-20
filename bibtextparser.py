@@ -68,7 +68,7 @@ def create_result_for_entry(entry):
         result = result + make_entry(entry[JournalTag])
     result = result + ','
     if YearTag in entry:
-        result = result + make_entry(entry[YearTag])
+        result = result + get_year_as_number(entry[YearTag])
     return result
 
 def create_set_for_input(set, list):
@@ -86,9 +86,20 @@ def create_and_save(set,list,setheader,filename):
     save_to_file(set, filename)
 
 
+def get_year_as_number(year):
+    extracted_year = ""
+    for i in year:
+        if i.isdigit():
+            extracted_year += i
+            if len(extracted_year) == 4:
+                return extracted_year
+        else:
+            extracted_year = ""
+    return ""
+
+
 if __name__ == '__main__':
     main()
-
 
 
 
