@@ -16,7 +16,7 @@ parser.add_argument('--set2', '-s2', default='set2.csv',
                     help='filename of second dataset csv')
 parser.add_argument('--matches', '-m', default='matches.csv',
                     help='filename of positives matches csv')
-parser.add_argument('--neg_pos_ratio', '-npr', default=9, type=float,
+parser.add_argument('--neg_pos_ratio', '-npr', default=100, type=float,
                     help='ratio of non-matching pairs to matching pairs')
 parser.add_argument('--val_prop', '-vp', default=0.1, type=float,
                     help='proportion of data to allocate to validation set')
