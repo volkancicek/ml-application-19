@@ -10,3 +10,9 @@ data/embeddings/glove-300.matrix.npy
 data/embeddings/glove-300.gensim.vectors.npy
 data/embeddings/glove-300.gensim
 data/embeddings/glove-300.map
+data/histories/
+data/models/
+data/raw/crossref/cermine/20190720/
+data/converted/crossref/cermine/20190720/
+data/split/crossref/cermine/
+data/split/crossref/exparser/
