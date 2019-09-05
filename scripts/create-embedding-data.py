@@ -29,6 +29,10 @@ elif embedding == 'word2vec':
     model_name = 'word2vec'
     model = KeyedVectors.load_word2vec_format(source, binary=True)
 
+elif embedding == 'fasttext':
+    model_name = 'fasttext'
+    model = KeyedVectors.load_word2vec_format(source, binary=False)
+
 elif embedding == 'debug':
     print(embedding)
     print(source)
