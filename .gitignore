@@ -16,3 +16,6 @@ data/raw/crossref/cermine/20190720/
 data/converted/crossref/cermine/20190720/
 data/split/crossref/cermine/
 data/split/crossref/exparser/
+data/crawl-300d-2M.vec
+data/embeddings/
+notebooks/.ipynb_checkpoints/
