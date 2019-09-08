@@ -19,3 +19,4 @@ data/split/crossref/exparser/
 data/crawl-300d-2M.vec
 data/embeddings/
 notebooks/.ipynb_checkpoints/
+data/split/dblp-scholar/
